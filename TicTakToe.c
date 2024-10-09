@@ -52,9 +52,9 @@ char ValidateWhoWon(char table[SIZE][SIZE])
     //checking colms
     for(int i = 0; i < 3; i++)
     {
-        if(table[0][i] == table[1][i] && table[1][i] == table[2][i] && table[i][0] != ' ')
+        if(table[0][i] == table[1][i] && table[1][i] == table[2][i] && table[0][i] != ' ')
         {    
-            return table[i][0];    
+            return table[0][i];    
         }   
     }
     //checking diagnols
